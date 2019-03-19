@@ -1,9 +1,16 @@
+#!/usr/bin/env python3
+"""
+아직 안건드림.. (네이버 증권 뉴스 크롤링)
+Output filename: ./input/[stock_name]_[period].xlsx
+"""
 import json
 import os
 from bs4 import BeautifulSoup
 import re
 import requests
 from webob.compat import urlparse
+
+
 
 class NaverFinanceNewsCrawler:
     URL_NAVER_FINANCE = "http://finance.naver.com"
